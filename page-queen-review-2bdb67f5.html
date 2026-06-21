@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赏金女王 · 杂志专题</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', '宋体', serif;
+            background: #faf7f0;
+            color: #2c2b28;
+            line-height: 1.7;
+            padding: 2rem 1.2rem;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #fffcf8;
+            padding: 2.8rem 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            border-radius: 20px;
+        }
+
+        /* hero 横幅 */
+        .hero {
+            margin-bottom: 2.8rem;
+            text-align: center;
+            border-bottom: 1px solid #e5ddd2;
+            padding-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 400;
+            letter-spacing: 4px;
+            color: #4b3f35;
+            margin-bottom: 0.5rem;
+            word-break: keep-all;
+        }
+
+        .hero .sub {
+            font-size: 1rem;
+            color: #8b7d6e;
+            letter-spacing: 2px;
+            font-style: italic;
+            border-top: 1px dashed #d6cdbe;
+            padding-top: 0.8rem;
+            display: inline-block;
+        }
+
+        /* 背景说明卡片 */
+        .context-card {
+            background: #f3efe8;
+            padding: 1.8rem 2rem;
+            border-radius: 24px;
+            margin-bottom: 2.5rem;
+            border-left: 6px solid #c7b299;
+            font-size: 1.05rem;
+        }
+
+        .context-card p {
+            margin-bottom: 0.6rem;
+        }
+
+        .context-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .context-card strong {
+            color: #6a5b4b;
+        }
+
+        /* 正文段落 */
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #4f3f31;
+            margin: 2rem 0 1rem;
+            border-bottom: 2px solid #eae0d2;
+            padding-bottom: 0.2rem;
+        }
+
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
+
+        .content p {
+            margin-bottom: 1.2rem;
+            text-indent: 2em;
+        }
+
+        .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 引用/提示框 */
+        .pull-quote {
+            background: #fff6eb;
+            padding: 1.6rem 2rem;
+            margin: 2rem 0;
+            border-radius: 50px 20px 20px 50px;
+            font-style: italic;
+            color: #4b3e32;
+            border-left: 4px solid #c0aa8f;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            text-indent: 0;
+        }
+
+        .pull-quote::before {
+            content: "“";
+            font-size: 3rem;
+            color: #b89e80;
+            line-height: 0;
+            vertical-align: -0.5rem;
+            margin-right: 6px;
+        }
+
+        .pull-quote p {
+            display: inline;
+            text-indent: 0;
+        }
+
+        /* 特点小列表（无图标，纯文字） */
+        .feature-list {
+            margin: 1.8rem 0;
+            padding-left: 1.8rem;
+            list-style: none;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.9rem;
+            position: relative;
+            padding-left: 1.2rem;
+            color: #3d352b;
+        }
+
+        .feature-list li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #b39578;
+        }
+
+        /* 页尾 */
+        .footer-note {
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e2d8ca;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #6f655a;
+        }
+
+        .footer-note a {
+            color: #7d6b56;
+            text-decoration: none;
+            border-bottom: 1px dotted #b8a58e;
+            transition: border 0.2s, color 0.2s;
+        }
+
+        .footer-note a:hover {
+            color: #4d3b2b;
+            border-bottom: 1px solid #7d6b56;
+        }
+
+        /* 响应式 */
+        @media (max-width: 540px) {
+            body { padding: 1rem 0.6rem; }
+            .container { padding: 2rem 1.2rem; }
+            .hero h1 { font-size: 2rem; letter-spacing: 2px; }
+            .context-card { padding: 1.4rem; }
+            .pull-quote { padding: 1.2rem; border-radius: 20px; }
+            .section-title { font-size: 1.2rem; }
+        }
+
+        @media (min-width: 900px) {
+            .container { padding: 3.5rem 3.2rem; }
+            .hero h1 { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- 首页横幅 -->
+    <div class="hero">
+        <h1>赏金女王</h1>
+        <div class="sub">—— 日常叙事中的角色与回响</div>
+    </div>
+
+    <!-- 背景说明 -->
+    <div class="context-card">
+        <p><strong>赏金女王</strong> 不是一个身份，更像一种隐喻。</p>
+        <p>在真实的生活场景里，每个人都会在某些时刻扮演“追寻者”的角色——寻找机会、兑现价值、经营自我。这个词恰好捕捉了那种微妙的张力：既有故事里的传奇色彩，也贴近现代人日常的取舍与坚持。</p>
+    </div>
+
+    <!-- 三段自然介绍 -->
+    <div class="content">
+        <h2 class="section-title">一、词语的温度</h2>
+        <p>第一次听到“赏金女王”，很容易联想到冒险小说或西部电影：一张悬赏令，一个独行背影。但若把视线拉回日常，这个词反而生出另一种味道——它不再指向遥远的虚构，而是描绘那些敢于为自己设定目标并一步步完成的人。无论是自由职业者、创意工作者，还是在小店里用心打理生活的店主，身上都带着一点“赏金”的气质：努力之后，收获本该属于自己的一份认可。</p>
+
+        <h2 class="section-title">二、角色与日常</h2>
+        <p>朋友曾开玩笑说，周末在二手市集摆摊的她，被熟客叫作“赏金女王”——因为她总能把积攒的旧物换成令人意外的回报。这种称呼里没有夸张，只有一点幽默和亲切。类似的场景还有很多：认真准备提案的职场人、研究新食谱的烘焙爱好者、每天记录开销并规划储蓄的年轻人……他们都在自己的轨道上经营着一种“赏金”逻辑：不依赖运气，而依赖判断和行动。生活本身并不总是波澜壮阔，但那些微小的、持续的交换与积累，渐渐构成了属于自己的叙事。</p>
+
+        <div class="pull-quote">
+            <p>赏金不是终点，而是途中遇见的一连串决定。女王也不是头衔，而是选择为自己负责的态度。</p>
+        </div>
+
+        <h2 class="section-title">三、风格与质感</h2>
+        <p>这个词之所以让人印象深刻，或许还因为它糅合了两种气质：一边是“赏金”代表的务实与交换，另一边是“女王”隐喻的从容与主权。在真实的生活里，两者并不矛盾。一个人可以既精打细算，也保有体面和风格；可以在讨价还价之后，仍然优雅地端起茶杯。这种混合质感，恰好对应了当下很多人追求的状态——不盲目崇高，也不放任粗糙。在<strong>赏金女王</strong>这个概念背后，藏着一种值得细品的日常哲学。</p>
+    </div>
+
+    <!-- 提示框 / FAQ摘要风格 -->
+    <div class="pull-quote" style="margin-top:1.5rem; margin-bottom:1.8rem;">
+        <p>有人说这个词来源于某段网络故事，也有人觉得它更像一种生活态度的代称。无论出处如何，重要的是它提醒我们：每个人都可以在自己的节奏里，找到那种既实际又自在的活法。</p>
+    </div>
+
+    <!-- 页尾访问提示 -->
+    <div class="footer-note">
+        <p>对「赏金女王」背后的更多话题与日常灵感感兴趣？<br>
+        欢迎浏览 <a href="https://page-queen.com">赏金女王</a> 的相关内容，那里有更完整的记录与分享。</p>
+        <p style="margin-top:1rem; font-size:0.85rem; color:#a19486;">—— 杂志专题 · 2025 · 生活叙事</p>
+    </div>
+
+</div>
+</body>
+</html>
